@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
 import React, { useState } from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
-
+import styles from './Stysheet';
 
 export default function Welcome({ navigation }: { navigation: any }) {
   const [Name, setName] = useState('')
@@ -43,34 +43,3 @@ export default function Welcome({ navigation }: { navigation: any }) {
 
 
 
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  body: {
-    justifyContent: 'center',
-    textAlign: 'center',
-    alignItems: 'center',
-    marginTop: 200,
-  },
-
-  text: {
-    fontSize: 30,
-    fontWeight: 'bold',
-    borderColor: 'black',
-    borderWidth: 2,
-    borderRadius: 20,
-    padding: 10,
-  },
-  border: {
-    borderColor: 'black',
-    borderWidth: 2,
-    marginTop: 20,
-    marginBottom: 20,
-    borderRadius: 20
-  }
-})
