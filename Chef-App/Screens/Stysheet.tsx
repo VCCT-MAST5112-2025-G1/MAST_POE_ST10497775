@@ -20,6 +20,7 @@ export default StyleSheet.create({
         borderWidth: 2,
         borderRadius: 20,
         padding: 10,
+        backgroundColor: '#fffffff5'
     },
     border: {
         borderColor: 'black',
@@ -27,6 +28,6 @@ export default StyleSheet.create({
         marginTop: 20,
         marginBottom: 20,
         borderRadius: 20,
-        padding: 10, // Added padding for better text input appearance
+        padding: 10,
     }
 });
