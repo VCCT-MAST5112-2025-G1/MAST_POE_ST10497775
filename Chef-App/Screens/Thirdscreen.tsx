@@ -6,7 +6,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import styles from './Stysheet'
 
 
-export default function List({ route }: { route: any }) {
+export default function List({ route, navigation }: { route: any, navigation: any }) {
     const [Add, Setadded] = useState('')
     const [Add2, Setadded2] = useState('')
     const Starter2 = route.params.StarterSend
@@ -170,6 +170,24 @@ export default function List({ route }: { route: any }) {
                 {selectedValue === `Deserts` && <Button title='Remove' color="red" onPress={() => {
                     Deserts2.pop() && Deserts2Price.pop(); alert("Removed Successfully")
                 }} />}
+
+
+                <Button
+                    title="Filter / Remove Specific Items"
+                    color="#000000"
+                    onPress={() =>
+                        navigation.navigate("Filter", {
+                            StarterSend: Starter2,
+                            StarterPriceSend: Starter2Price,
+                            DrinksSend: Drinks2,
+                            DrinksPriceSend: Drinks2Price,
+                            MealsSend: Meals2,
+                            MealsPriceSend: Meals2Price,
+                            DesertsSend: Deserts2,
+                            DesertsPriceSend: Deserts2Price,
+                        })
+                    }
+                />
 
             </View>
         </LinearGradient>

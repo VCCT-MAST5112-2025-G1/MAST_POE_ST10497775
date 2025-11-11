@@ -7,6 +7,7 @@ import Welcome from './Screens/WelcomeChef';
 import Menu from './Screens/SecondScreen';
 import { Icon } from 'react-native-screens';
 import List from './Screens/Thirdscreen';
+import Filter from './Screens/Fourthscreen';
 
 
 const stack = createNativeStackNavigator()
@@ -31,6 +32,7 @@ function TabNavigator() {
       <Tab.Screen name="Welcome" component={Stacknavigator} options={{ tabBarButton: () => null }} />
       <Tab.Screen name="Menu" component={Menu} />
       <Tab.Screen name="List" component={List} options={{ tabBarButton: () => null }} />
+      <Tab.Screen name="Filter" component={Filter} />
     </Tab.Navigator>
   )
 }
