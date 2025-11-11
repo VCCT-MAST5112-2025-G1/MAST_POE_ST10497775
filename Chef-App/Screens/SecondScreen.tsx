@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Button, TextInput, TouchableOpacity } from 'rea
 import { Picker } from '@react-native-picker/picker';
 import { use, useState } from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
+import styles from './Stysheet'
 
 
 export default function Menu({ navigation }: { navigation: any }) {
@@ -20,8 +21,8 @@ export default function Menu({ navigation }: { navigation: any }) {
             style={{ flex: 1 }}
         >
             <View style={styles.body}>
-                <Text style={{ fontSize: 20, borderColor: 'black', borderWidth: 1, borderRadius: 5, marginTop: 100, alignContent: 'center', justifyContent: 'center', textAlign: 'center' }}>Restaurant</Text>
-                <Text style={{ fontSize: 20, textAlign: 'center' }}>Current Menu</Text>
+                <Text style={styles.toptext}>Restaurant</Text>
+                <Text style={styles.bottomtext}>Current Menu</Text>
                 <Picker
                     selectedValue={selectedValue}
                     onValueChange={(itemValue) => SetselectedValue(itemValue)}
@@ -34,22 +35,22 @@ export default function Menu({ navigation }: { navigation: any }) {
                     <Picker.Item label='Deserts' value='Deserts' />
                 </Picker>
                 <Text style={{ textAlign: 'center', fontSize: 20 }}>Descriptions</Text>
-                {selectedValue === `Starter` && <Text style={{ textAlign: 'center', fontSize: 16 }}>{Starter.join(", ")}</Text>}
-                {selectedValue === `Starter` && <Text style={{ textAlign: 'center', fontSize: 16 }}>Prices(Rand)</Text>}
-                {selectedValue === `Starter` && <Text style={{ textAlign: 'center', fontSize: 16 }}>{StarterPrice.join(", ")}</Text>}
-                {selectedValue === `Starter` && <Text style={{ textAlign: 'center', fontSize: 16, borderColor: 'black', borderWidth: 1, borderRadius: 5, marginBottom: 10, marginTop: 10 }}>Number of Items: {Starter.length}</Text>}
-                {selectedValue === `Drinks` && <Text style={{ textAlign: 'center', fontSize: 16 }}>{Drinks.join(", ")}</Text>}
-                {selectedValue === `Drinks` && <Text style={{ textAlign: 'center', fontSize: 16 }}>Prices(Rand)</Text>}
-                {selectedValue === `Drinks` && <Text style={{ textAlign: 'center', fontSize: 16 }}>{DrinksPrice.join(", ")}</Text>}
-                {selectedValue === `Drinks` && <Text style={{ textAlign: 'center', fontSize: 16, borderColor: 'black', borderWidth: 1, borderRadius: 5, marginBottom: 10, marginTop: 10 }}>Number of Items: {Drinks.length}</Text>}
-                {selectedValue === `Meals` && <Text style={{ textAlign: 'center', fontSize: 16 }}>{Meals.join(", ")}</Text>}
-                {selectedValue === `Meals` && <Text style={{ textAlign: 'center', fontSize: 16 }}>Prices(Rand)</Text>}
-                {selectedValue === `Meals` && <Text style={{ textAlign: 'center', fontSize: 16 }}>{MealsPrice.join(", ")}</Text>}
-                {selectedValue === `Meals` && <Text style={{ textAlign: 'center', fontSize: 16, borderColor: 'black', borderWidth: 1, borderRadius: 5, marginBottom: 10, marginTop: 10 }}>Number of Items: {Meals.length}</Text>}
-                {selectedValue === `Deserts` && <Text style={{ textAlign: 'center', fontSize: 16 }}>{Deserts.join(", ")}</Text>}
-                {selectedValue === `Deserts` && <Text style={{ textAlign: 'center', fontSize: 16 }}>Prices(Rand)</Text>}
-                {selectedValue === `Deserts` && <Text style={{ textAlign: 'center', fontSize: 16 }}>{DesertsPrice.join(", ")}</Text>}
-                {selectedValue === `Deserts` && <Text style={{ textAlign: 'center', fontSize: 16, borderColor: 'black', borderWidth: 1, borderRadius: 5, marginBottom: 10, marginTop: 10 }}>Number of Items: {Deserts.length}</Text>}
+                {selectedValue === `Starter` && <Text style={styles.descriptionText}>{Starter.join(", ")}</Text>}
+                {selectedValue === `Starter` && <Text style={styles.descriptionText}>Prices(Rand)</Text>}
+                {selectedValue === `Starter` && <Text style={styles.descriptionText}>{StarterPrice.join(", ")}</Text>}
+                {selectedValue === `Starter` && <Text style={styles.textpop}>Number of Items: {Starter.length}</Text>}
+                {selectedValue === `Drinks` && <Text style={styles.descriptionText}>{Drinks.join(", ")}</Text>}
+                {selectedValue === `Drinks` && <Text style={styles.descriptionText}>Prices(Rand)</Text>}
+                {selectedValue === `Drinks` && <Text style={styles.descriptionText}>{DrinksPrice.join(", ")}</Text>}
+                {selectedValue === `Drinks` && <Text style={styles.textpop}>Number of Items: {Drinks.length}</Text>}
+                {selectedValue === `Meals` && <Text style={styles.descriptionText}>{Meals.join(", ")}</Text>}
+                {selectedValue === `Meals` && <Text style={styles.descriptionText}>Prices(Rand)</Text>}
+                {selectedValue === `Meals` && <Text style={styles.descriptionText}>{MealsPrice.join(", ")}</Text>}
+                {selectedValue === `Meals` && <Text style={styles.textpop}>Number of Items: {Meals.length}</Text>}
+                {selectedValue === `Deserts` && <Text style={styles.descriptionText}>{Deserts.join(", ")}</Text>}
+                {selectedValue === `Deserts` && <Text style={styles.descriptionText}>Prices(Rand)</Text>}
+                {selectedValue === `Deserts` && <Text style={styles.descriptionText}>{DesertsPrice.join(", ")}</Text>}
+                {selectedValue === `Deserts` && <Text style={styles.textpop}>Number of Items: {Deserts.length}</Text>}
                 <Button title='Add More' color="#000000ff" onPress={() => {
                     navigation.navigate("List", {
                         StarterSend: Starter,
@@ -76,18 +77,6 @@ export default function Menu({ navigation }: { navigation: any }) {
 
 
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    body: {
-
-
-    },
-})
 
 
 

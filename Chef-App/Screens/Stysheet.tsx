@@ -29,5 +29,34 @@ export default StyleSheet.create({
         marginBottom: 20,
         borderRadius: 20,
         padding: 10,
+    },
+
+    textpop: {
+        textAlign: 'center',
+        fontSize: 16,
+        borderColor: 'black',
+        borderWidth: 1,
+        borderRadius: 5,
+        marginBottom: 10,
+        marginTop: 10
+    }
+    , descriptionText: {
+        textAlign: 'center', fontSize: 16
+    }
+    ,
+    toptext: {
+        fontSize: 20,
+        borderColor: 'black',
+        borderWidth: 1,
+        borderRadius: 5,
+        marginTop: 100,
+        alignContent: 'center',
+        justifyContent: 'center',
+        textAlign: 'center'
+    }
+    ,
+    bottomtext: {
+        fontSize: 20,
+        textAlign: 'center'
     }
 });
