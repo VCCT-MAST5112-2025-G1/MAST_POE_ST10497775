@@ -3,19 +3,23 @@ import { StyleSheet, Text, View, Button, TextInput, TouchableOpacity } from 'rea
 import { Picker } from '@react-native-picker/picker';
 import { use, useState } from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import styles from './Stysheet'
+
+
+
 
 
 
 
 export default function Menu() {
     const [selectedValue, SetselectedValue] = useState('')
-
     return (
         <LinearGradient colors={['#12D936', '#CBFF83']}
             style={{ flex: 1 }}
         >
             <View style={styles.body}>
-
+                <Text>hi</Text>
 
             </View>
         </LinearGradient>
@@ -31,16 +35,5 @@ export default function Menu() {
 
 
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    body: {
 
-
-    },
-})
 
