@@ -39,18 +39,34 @@ export default function Menu({ navigation }: { navigation: any }) {
                 {selectedValue === `Starter` && <Text style={styles.descriptionText}>Prices(Rand)</Text>}
                 {selectedValue === `Starter` && <Text style={styles.descriptionText}>{StarterPrice.join(", ")}</Text>}
                 {selectedValue === `Starter` && <Text style={styles.textpop}>Number of Items: {Starter.length}</Text>}
+                {selectedValue === `Starter` && <Text style={styles.textpop}>Average Price: {(
+                    StarterPrice.map(Number).reduce((a, b) => a + b, 0) / StarterPrice.length
+                ).toFixed(2)}{' '}
+                    R</Text>}
                 {selectedValue === `Drinks` && <Text style={styles.descriptionText}>{Drinks.join(", ")}</Text>}
                 {selectedValue === `Drinks` && <Text style={styles.descriptionText}>Prices(Rand)</Text>}
                 {selectedValue === `Drinks` && <Text style={styles.descriptionText}>{DrinksPrice.join(", ")}</Text>}
                 {selectedValue === `Drinks` && <Text style={styles.textpop}>Number of Items: {Drinks.length}</Text>}
+                {selectedValue === `Drinks` && <Text style={styles.textpop}>Average Price: {(
+                    DrinksPrice.map(Number).reduce((a, b) => a + b, 0) / DrinksPrice.length
+                ).toFixed(2)}{' '}
+                    R</Text>}
                 {selectedValue === `Meals` && <Text style={styles.descriptionText}>{Meals.join(", ")}</Text>}
                 {selectedValue === `Meals` && <Text style={styles.descriptionText}>Prices(Rand)</Text>}
                 {selectedValue === `Meals` && <Text style={styles.descriptionText}>{MealsPrice.join(", ")}</Text>}
                 {selectedValue === `Meals` && <Text style={styles.textpop}>Number of Items: {Meals.length}</Text>}
+                {selectedValue === `Meals` && <Text style={styles.textpop}>Average Price: {(
+                    MealsPrice.map(Number).reduce((a, b) => a + b, 0) / MealsPrice.length
+                ).toFixed(2)}{' '}
+                    R</Text>}
                 {selectedValue === `Deserts` && <Text style={styles.descriptionText}>{Deserts.join(", ")}</Text>}
                 {selectedValue === `Deserts` && <Text style={styles.descriptionText}>Prices(Rand)</Text>}
                 {selectedValue === `Deserts` && <Text style={styles.descriptionText}>{DesertsPrice.join(", ")}</Text>}
                 {selectedValue === `Deserts` && <Text style={styles.textpop}>Number of Items: {Deserts.length}</Text>}
+                {selectedValue === `Deserts` && <Text style={styles.textpop}>Average Price: {(
+                    DesertsPrice.map(Number).reduce((a, b) => a + b, 0) / DesertsPrice.length
+                ).toFixed(2)}{' '}
+                    R</Text>}
                 <Button title='Add More' color="#000000ff" onPress={() => {
                     navigation.navigate("List", {
                         StarterSend: Starter,
