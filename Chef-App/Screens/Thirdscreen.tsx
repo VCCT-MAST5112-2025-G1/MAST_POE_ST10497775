@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Button, TextInput, TouchableOpacity } from 'rea
 import { Picker } from '@react-native-picker/picker';
 import { use, useState } from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
+import styles from './Stysheet'
 
 
 export default function List({ route }: { route: any }) {
@@ -82,72 +83,72 @@ export default function List({ route }: { route: any }) {
 
                 <Text style={{ textAlign: 'center', fontSize: 20 }}>Descriptions</Text>
                 {selectedValue === `Starter` && <Text>{Starter2.join(",")}</Text>}
-                {selectedValue === `Starter` && <Text style={{ textAlign: 'center', fontSize: 16 }}>Prices(Rand)</Text>}
-                {selectedValue === `Starter` && <Text style={{ textAlign: 'center', fontSize: 16 }}>{Starter2Price.join(",")}</Text>}
+                {selectedValue === `Starter` && <Text style={styles.descriptionText}>Prices(Rand)</Text>}
+                {selectedValue === `Starter` && <Text style={styles.descriptionText}>{Starter2Price.join(",")}</Text>}
                 {selectedValue === `Starter` && <TextInput placeholder='Enter The Starter'
                     onChangeText={(text) => Setadded(text)}
                     value={Add}
-                    style={{ borderColor: 'black', borderWidth: 1, borderRadius: 5, margin: 10, marginTop: 20 }}
+                    style={styles.inputholders}
                 ></TextInput>}
                 {selectedValue === `Starter` && <TextInput placeholder='Enter The Price'
                     onChangeText={(text) => Setadded2(text)}
                     value={Add2}
                     keyboardType='numeric'
-                    style={{ borderColor: 'black', borderWidth: 1, borderRadius: 5, margin: 10, }}
+                    style={styles.inputholders}
                 ></TextInput>}
-                {selectedValue === `Starter` && <Text style={{ textAlign: 'center', fontSize: 16, borderColor: 'black', borderWidth: 1, borderRadius: 5, margin: 10 }}> Number of Items: {Starter2.length}</Text>}
+                {selectedValue === `Starter` && <Text style={styles.textpop}> Number of Items: {Starter2.length}</Text>}
                 {selectedValue === `Starter` && <Button title='Add' color="blue" onPress={AddStarter2} />}
                 {selectedValue === `Starter` && <Button title='Remove' color="red" onPress={() => { Starter2.pop(), Starter2Price.pop(); alert("Removed Successfully") }} />}
                 {selectedValue === `Drinks` && <Text>{Drinks2.join(", ")}</Text>}
-                {selectedValue === `Drinks` && <Text style={{ textAlign: 'center', fontSize: 16 }}>Prices(Rand)</Text>}
-                {selectedValue === `Drinks` && <Text style={{ textAlign: 'center', fontSize: 16 }}>{Drinks2Price.join(", ")}</Text>}
+                {selectedValue === `Drinks` && <Text style={styles.descriptionText}>Prices(Rand)</Text>}
+                {selectedValue === `Drinks` && <Text style={styles.descriptionText}>{Drinks2Price.join(", ")}</Text>}
                 {selectedValue === `Drinks` && <TextInput placeholder='Enter The Drink'
                     onChangeText={(text) => Setadded(text)}
                     value={Add}
-                    style={{ borderColor: 'black', borderWidth: 1, borderRadius: 5, margin: 10, marginTop: 20 }}
+                    style={styles.inputholders}
                 ></TextInput>}
                 {selectedValue === `Drinks` && <TextInput placeholder='Enter The Price'
                     onChangeText={(text) => Setadded2(text)}
                     value={Add2}
                     keyboardType='numeric'
-                    style={{ borderColor: 'black', borderWidth: 1, borderRadius: 5, margin: 10, }}
+                    style={styles.inputholders}
                 ></TextInput>}
-                {selectedValue === `Drinks` && <Text style={{ textAlign: 'center', fontSize: 16, borderColor: 'black', borderWidth: 1, borderRadius: 5, margin: 10 }}> Number of Items: {Drinks2.length}</Text>}
+                {selectedValue === `Drinks` && <Text style={styles.textpop}> Number of Items: {Drinks2.length}</Text>}
                 {selectedValue === `Drinks` && <Button title='Add' color="blue" onPress={AddDrinks2} />}
                 {selectedValue === `Drinks` && <Button title='Remove' color="red" onPress={() => { Drinks2.pop(), Drinks2Price.pop(); alert("Removed Successfully") }} />}
                 {selectedValue === `Meals` && <Text>{Meals2.join(", ")}</Text>}
-                {selectedValue === `Meals` && <Text style={{ textAlign: 'center', fontSize: 16 }}>Prices(Rand)</Text>}
-                {selectedValue === `Meals` && <Text style={{ textAlign: 'center', fontSize: 16 }}>{Meals2Price.join(", ")}</Text>}
+                {selectedValue === `Meals` && <Text style={styles.descriptionText}>Prices(Rand)</Text>}
+                {selectedValue === `Meals` && <Text style={styles.descriptionText}>{Meals2Price.join(", ")}</Text>}
                 {selectedValue === `Meals` && <TextInput placeholder='Enter The Meal'
                     onChangeText={(text) => Setadded(text)}
                     value={Add}
-                    style={{ borderColor: 'black', borderWidth: 1, borderRadius: 5, margin: 10, marginTop: 20 }}
+                    style={styles.inputholders}
                 ></TextInput>}
                 {selectedValue === `Meals` && <TextInput placeholder='Enter The Price'
                     onChangeText={(text) => Setadded2(text)}
                     value={Add2}
                     keyboardType='numeric'
-                    style={{ borderColor: 'black', borderWidth: 1, borderRadius: 5, margin: 10 }}
+                    style={styles.inputholders}
                 ></TextInput>}
-                {selectedValue === `Meals` && <Text style={{ textAlign: 'center', fontSize: 16, borderColor: 'black', borderWidth: 1, borderRadius: 5, margin: 10 }}> Number of Items: {Meals2.length}</Text>}
+                {selectedValue === `Meals` && <Text style={styles.textpop}> Number of Items: {Meals2.length}</Text>}
                 {selectedValue === `Meals` && <Button title='Add' color="blue" onPress={AddMeals2} />}
                 {selectedValue === `Meals` && <Button title='Remove' color="red" onPress={() => { Meals2.pop(), Meals2Price.pop(); alert("Removed Successfully") }} />}
                 {selectedValue === `Deserts` && <Text>{Deserts2.join(", ")}</Text>}
-                {selectedValue === `Deserts` && <Text style={{ textAlign: 'center', fontSize: 16 }}>Prices(Rand)</Text>}
-                {selectedValue === `Deserts` && <Text style={{ textAlign: 'center', fontSize: 16 }}>{Deserts2Price.join(", ")}</Text>}
+                {selectedValue === `Deserts` && <Text style={styles.descriptionText}>Prices(Rand)</Text>}
+                {selectedValue === `Deserts` && <Text style={styles.descriptionText}>{Deserts2Price.join(", ")}</Text>}
                 {selectedValue === `Deserts` && <TextInput placeholder='Enter The Desert'
                     onChangeText={(text) => Setadded(text)}
                     value={Add}
-                    style={{ borderColor: 'black', borderWidth: 1, borderRadius: 5, margin: 10, marginTop: 20 }}
+                    style={styles.inputholders}
                 ></TextInput>}
 
                 {selectedValue === `Deserts` && <TextInput placeholder='Enter The Price'
                     onChangeText={(text) => Setadded2(text)}
                     value={Add2}
                     keyboardType='numeric'
-                    style={{ borderColor: 'black', borderWidth: 1, borderRadius: 5, margin: 10 }}
+                    style={styles.inputholders}
                 ></TextInput>}
-                {selectedValue === `Deserts` && <Text style={{ textAlign: 'center', fontSize: 16, borderColor: 'black', borderWidth: 1, borderRadius: 5, margin: 10 }}> Number of Items: {Deserts2.length}</Text>}
+                {selectedValue === `Deserts` && <Text style={styles.textpop}> Number of Items: {Deserts2.length}</Text>}
                 {selectedValue === `Deserts` && <Button title='Add' color="blue" onPress={AddDeserts2} />}
                 {selectedValue === `Deserts` && <Button title='Remove' color="red" onPress={() => {
                     Deserts2.pop() && Deserts2Price.pop(); alert("Removed Successfully")

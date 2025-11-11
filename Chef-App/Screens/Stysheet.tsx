@@ -58,5 +58,24 @@ export default StyleSheet.create({
     bottomtext: {
         fontSize: 20,
         textAlign: 'center'
+    },
+    inputholders: {
+        borderColor: 'black',
+        borderWidth: 1,
+        borderRadius: 5,
+        margin: 10,
+        padding: 15
+    },
+
+
+    bigtext: {
+        fontSize: 20,
+        borderColor: 'black',
+        borderWidth: 1,
+        borderRadius: 5,
+        marginTop: 100,
+        alignContent: 'center',
+        justifyContent: 'center',
+        textAlign: 'center'
     }
 });

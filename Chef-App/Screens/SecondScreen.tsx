@@ -20,7 +20,7 @@ export default function Menu({ navigation }: { navigation: any }) {
         <LinearGradient colors={['#12D936', '#CBFF83']}
             style={{ flex: 1 }}
         >
-            <View style={styles.body}>
+            <View>
                 <Text style={styles.toptext}>Restaurant</Text>
                 <Text style={styles.bottomtext}>Current Menu</Text>
                 <Picker
