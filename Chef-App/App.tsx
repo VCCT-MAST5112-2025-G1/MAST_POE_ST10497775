@@ -54,7 +54,7 @@ function TabNavigator() {
     >
       <Tab.Screen name="Welcome" component={Stacknavigator} options={{ tabBarButton: () => null, tabBarLabel: 'Welcome' }} />
       <Tab.Screen name="Menu" component={Menu} options={{ tabBarLabel: 'Menu' }} />
-      <Tab.Screen name="List" component={List} options={{ tabBarButton: () => null, tabBarLabel: 'List' }} />
+      <Tab.Screen name="List" component={List} options={{ tabBarLabel: 'List' }} />
       <Tab.Screen name="Filter" component={Filter} options={{ tabBarLabel: 'Filter' }} />
     </Tab.Navigator>
   );

@@ -67,7 +67,7 @@ export default function List({ route, navigation }: { route: any, navigation: an
             style={{ flex: 1 }}
         >
             <View>
-                <Text style={{ fontSize: 20, borderColor: 'black', borderWidth: 1, borderRadius: 5, marginTop: 100, alignContent: 'center', justifyContent: 'center', textAlign: 'center' }}>List</Text>
+                <Text style={{ fontSize: 20, borderColor: 'black', borderWidth: 1, borderRadius: 5, marginTop: 100, alignContent: 'center', justifyContent: 'center', textAlign: 'center', backgroundColor: '#f5f5f5fe' }}>List</Text>
                 <Picker
                     selectedValue={selectedValue}
                     onValueChange={(itemValue) => SetselectedValue(itemValue)}
