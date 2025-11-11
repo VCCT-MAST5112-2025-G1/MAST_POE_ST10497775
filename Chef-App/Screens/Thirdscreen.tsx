@@ -85,6 +85,10 @@ export default function List({ route }: { route: any }) {
                 {selectedValue === `Starter` && <Text>{Starter2.join(",")}</Text>}
                 {selectedValue === `Starter` && <Text style={styles.descriptionText}>Prices(Rand)</Text>}
                 {selectedValue === `Starter` && <Text style={styles.descriptionText}>{Starter2Price.join(",")}</Text>}
+                {selectedValue === `Starter` && <Text style={styles.textpop}> Average Price: {(
+                    Starter2Price.map(Number).reduce((a: number, b: number) => a + b, 0) / Starter2Price.length
+                ).toFixed(2)}{' '}
+                    R</Text>}
                 {selectedValue === `Starter` && <TextInput placeholder='Enter The Starter'
                     onChangeText={(text) => Setadded(text)}
                     value={Add}
@@ -102,6 +106,11 @@ export default function List({ route }: { route: any }) {
                 {selectedValue === `Drinks` && <Text>{Drinks2.join(", ")}</Text>}
                 {selectedValue === `Drinks` && <Text style={styles.descriptionText}>Prices(Rand)</Text>}
                 {selectedValue === `Drinks` && <Text style={styles.descriptionText}>{Drinks2Price.join(", ")}</Text>}
+                {selectedValue === `Drinks` && <Text style={styles.textpop}> Average Price: {(
+                    Drinks2Price.map(Number).reduce((a: number, b: number) => a + b, 0) / Drinks2Price.length
+                ).toFixed(2)}{' '}
+                    R</Text>}
+
                 {selectedValue === `Drinks` && <TextInput placeholder='Enter The Drink'
                     onChangeText={(text) => Setadded(text)}
                     value={Add}
@@ -119,6 +128,10 @@ export default function List({ route }: { route: any }) {
                 {selectedValue === `Meals` && <Text>{Meals2.join(", ")}</Text>}
                 {selectedValue === `Meals` && <Text style={styles.descriptionText}>Prices(Rand)</Text>}
                 {selectedValue === `Meals` && <Text style={styles.descriptionText}>{Meals2Price.join(", ")}</Text>}
+                {selectedValue === `Meals` && <Text style={styles.textpop}> Average Price: {(
+                    Meals2Price.map(Number).reduce((a: number, b: number) => a + b, 0) / Meals2Price.length
+                ).toFixed(2)}{' '}
+                    R</Text>}
                 {selectedValue === `Meals` && <TextInput placeholder='Enter The Meal'
                     onChangeText={(text) => Setadded(text)}
                     value={Add}
@@ -136,6 +149,10 @@ export default function List({ route }: { route: any }) {
                 {selectedValue === `Deserts` && <Text>{Deserts2.join(", ")}</Text>}
                 {selectedValue === `Deserts` && <Text style={styles.descriptionText}>Prices(Rand)</Text>}
                 {selectedValue === `Deserts` && <Text style={styles.descriptionText}>{Deserts2Price.join(", ")}</Text>}
+                {selectedValue === `Deserts` && <Text style={styles.textpop}> Average Price: {(
+                    Deserts2Price.map(Number).reduce((a: number, b: number) => a + b, 0) / Deserts2Price.length
+                ).toFixed(2)}{' '}
+                    R</Text>}
                 {selectedValue === `Deserts` && <TextInput placeholder='Enter The Desert'
                     onChangeText={(text) => Setadded(text)}
                     value={Add}

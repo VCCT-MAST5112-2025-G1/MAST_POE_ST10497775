@@ -37,6 +37,7 @@ export default StyleSheet.create({
         borderColor: 'black',
         borderWidth: 1,
         borderRadius: 5,
+        backgroundColor: '#fffffffe',
         marginBottom: 10,
         marginTop: 10
     }
@@ -49,6 +50,7 @@ export default StyleSheet.create({
         borderColor: 'black',
         borderWidth: 1,
         borderRadius: 5,
+        backgroundColor: '#fffffffe',
         marginTop: 100,
         alignContent: 'center',
         justifyContent: 'center',
@@ -63,6 +65,7 @@ export default StyleSheet.create({
         borderColor: 'black',
         borderWidth: 1,
         borderRadius: 5,
+        backgroundColor: '#fffffffe',
         margin: 10,
         padding: 15
     },
