@@ -3,15 +3,6 @@ import { StyleSheet, Text, View, Button, TextInput, TouchableOpacity } from 'rea
 import { Picker } from '@react-native-picker/picker';
 import { use, useState } from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-
-
-const Starter = await AsyncStorage.getItem('Starter');
-const Startervalue1 = Starter ? await AsyncStorage.getItem(Starter) : null
-
-
-
-
 
 
 export default function Menu({ navigation }: { navigation: any }) {
