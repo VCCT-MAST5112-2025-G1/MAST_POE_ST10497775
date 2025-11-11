@@ -1,6 +1,4 @@
 
-
-
 const Starter = ['samosa', 'spring_rolls', 'bruschetta', 'stuffed_mushrooms', 'deviled_eggs']
 const StarterPrice = ["9", "12", "15", "20", "25"]
 const Drinks = ['coke', 'orange_juice', 'water', 'lemonade']
