@@ -66,6 +66,44 @@ Github Repositories
 
 6.Price Code Complete
 
+## Change log Part 3
+Created a new document to store all my styles
+
+added styles to my external stylesheet and removed from my first screen
+
+added background color to welcome text first screen 
+
+created a tsx for my array and price
+
+changed context.tsx to async.tsx and added all the arrays 
+
+added Async Arrays to Async.tsx
+
+deleted code from async second screen and thrid screen 
+
+added arrays 
+
+deleted async.tsx and added previous code for second screen
+
+deleted Async tsx
+
+added previous code in my thrid screen 
+
+exported styles from second screen to an external tsx
+
+extracted styles from thirdscreen to external tsx
+
+added average price for the second screen 
+
+added calculation average price on the thrid screen and changed the background color for some text for visibility 
+
+added the fourth screen and put it on tab navigator
+
+added icons to the tab navigation
+
+added a background to top text in the second screen 
+
+
 ## References
 
 Meta. (n.d.) React – The library for web and native user interfaces. Available at: < https://react.dev/  >
