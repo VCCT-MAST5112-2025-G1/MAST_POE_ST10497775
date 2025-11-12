@@ -16,6 +16,17 @@ The Chef App is designed to make it easy for chefs to manage and update restaura
 
 7. Scan the QR Code
 
+## Packages to install 
+npm install react-native-linear-gradient
+
+ npx expo install expo-linear-gradient
+ 
+npm install @react-navigation/bottom-tabs
+
+npm install react-native-vector-icons
+
+ 
+
 
 
 ## Features
