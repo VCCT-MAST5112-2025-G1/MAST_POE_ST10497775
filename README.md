@@ -103,6 +103,18 @@ added icons to the tab navigation
 
 added a background to top text in the second screen 
 
+## Pictures
+
+<img width="314" height="675" alt="Screenshot 2025-11-12 163241" src="https://github.com/user-attachments/assets/38c8ab16-9cd7-42c1-93a0-48b671df09bd" />
+
+
+<img width="311" height="674" alt="Screenshot 2025-11-12 163259" src="https://github.com/user-attachments/assets/70a8f2ed-cfbb-48ed-bd7b-ae1c5f313936" />
+
+<img width="313" height="677" alt="Screenshot 2025-11-12 163331" src="https://github.com/user-attachments/assets/2496c645-ce18-4c01-81fe-0fa01e5e152d" />
+
+<img width="310" height="675" alt="Screenshot 2025-11-12 163349" src="https://github.com/user-attachments/assets/1f6b68cc-4f14-4c26-8eaf-a403fab389d9" />
+
+
 
 ## References
 
