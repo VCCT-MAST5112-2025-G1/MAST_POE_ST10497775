@@ -25,6 +25,8 @@ npm install @react-navigation/bottom-tabs
 
 npm install react-native-vector-icons
 
+npx expo install @react-native-picker/picker
+
  
 
 
@@ -141,8 +143,12 @@ Microsoft. (n.d.) TypeScript Playground. Available at:< https://www.typescriptla
  (Picker.n.d)React Native. 2023. Picker · React Native Documentation. [online] Available at:< https://archive.reactnative.dev/docs/picker >
  [Accessed 22 October 2025].
 
- ## Youtube Video
+ ## Youtube Video Part 2
 https://www.youtube.com/watch?v=PiULJcj0Bpk
+
+
+## Youtube Video Part 3
+https://youtu.be/Wav6E84cEAs
 
 ## Github Repo
 https://github.com/VCCT-MAST5112-2025-G1/MAST_POE_ST10497775
